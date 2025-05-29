@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="75d4cace-c4cb-4599-99f9-2d7006672e47" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/.vs/Neon Pulse - The Infinite Run/FileContentIndex/079ed3f1-8b77-460b-a177-04d1b23a3f86.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/.vs/Neon Pulse - The Infinite Run/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/.vs/Neon Pulse - The Infinite Run/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/.vs/Neon Pulse - The Infinite Run/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/.vs/Neon Pulse - The Infinite Run/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Assets/Prefab/Cube.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Assets/Prefab/Cube.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Assets/Prefab/Cube.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Assets/Prefab/Cube.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Assets/Scenes/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Assets/Scenes/Prefabs/coin-3d-x.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Assets/Scenes/Prefabs/coin-3d-x.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Assets/Scripts/BoxSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Assets/Scripts/BoxSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/ArtifactDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/Artifacts/97/97c06e84dda768c1eb26049230c3335e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/Artifacts/dc/dcd921b57132d078d8d6f4aa33bf738d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/Bee/TundraBuildState.state" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/Bee/TundraBuildState.state" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/Bee/TundraBuildState.state.map" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/Bee/TundraBuildState.state.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.ref.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.ref.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/Bee/backend1.traceevents" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/Bee/backend1.traceevents" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/Bee/fullprofile.json" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/Bee/fullprofile.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/Bee/tundra.digestcache" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/Bee/tundra.digestcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/Bee/tundra.log.json" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/Bee/tundra.log.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/LastSceneManagerSetup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/LastSceneManagerSetup.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/SceneVisibilityState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/Search/transactions.db" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/Search/transactions.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/ShaderCache/shader/Polygon_Triplanar635c/01/80ee4ab47b0e2d2f27fc933602b133d6.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/ShaderCache/shader/Polygon_Triplanar635c/01/c0427bb1b65fc6a5c0f0ead9a793ecef.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/ShaderCache/shader/Polygon_Triplanar635c/01/e471d1f27de1ad3b7c9f6943977d5022.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/ShaderCache/shader/Polygon_Triplanar635c/01/eb1a3913a28feefacc03ef00a4fc900e.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/SourceAssetDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/expandedItems" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/ilpp.pid" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Library/ilpp.pid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Logs/AssetImportWorker0-prev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Logs/AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Logs/AssetImportWorker1-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Logs/AssetImportWorker1-prev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Logs/AssetImportWorker1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Logs/AssetImportWorker1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Logs/AssetImportWorker2-prev.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/Logs/AssetImportWorker3-prev.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Neon Pulse - The Infinite Run/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2omxCv37WwR4aQmUJIVloGaZA8P" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/lsole/IdeaProjects/Technoloqie"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="75d4cace-c4cb-4599-99f9-2d7006672e47" name="Changes" comment="" />
+      <created>1731488435126</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731488435126</updated>
+    </task>
+    <servers />
+  </component>
+</project>
