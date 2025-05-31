@@ -64,3 +64,18 @@ Descarrega la versió corresponent des de la secció de [Releases](https://githu
 
 Projecte desenvolupat per **Laura Solé Català** com a part del Treball Final de Grau en **Enginyeria Informàtica** a la **Universitat Oberta de Catalunya (UOC)**.
 
+---
+
+## 🌐 Xarxes socials
+
+Segueix l’evolució del projecte a les xarxes socials:
+
+- [X (Twitter)](https://x.com/NeonPulseRun)
+
+Pròximament també a:
+
+- Instagram  
+- TikTok  
+- YouTube  
+- Twitch
+
