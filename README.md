@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="img/NeonPulseLogo.png" width="300" alt="Neon Pulse logo"/>
+</p>
+
 # Neon Pulse: The Infinite Run
 
 **Neon Pulse: The Infinite Run** és un videojoc de tipus *Endless Runner* ambientat en un món futurista amb estètica ciberpunk. El jugador assumeix el rol d’un corredor que ha de sobreviure en una ciutat plena de llums de neó, evitant obstacles, recollint criptocoins i avançant el màxim possible sense ser eliminat.
