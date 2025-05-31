@@ -115,3 +115,9 @@ Pròximament també a:
 - YouTube  
 - Twitch
 
+---
+
+## 📄 Documentació
+
+Pots consultar el document complet del Treball Final de Grau aquí:  
+[📘 TFG - Memòria del projecte (PDF)](./TFG_LauraSole_NeonPulse.pdf)
