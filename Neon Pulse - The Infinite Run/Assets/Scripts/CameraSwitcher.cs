@@ -9,11 +9,11 @@ public class CameraSwitcher : MonoBehaviour
     public CinemachineVirtualCamera mainCam;
     public CinemachineVirtualCamera topDownCam;
     public CinemachineVirtualCamera cityCam;
-    public CinemachineVirtualCamera cityZoomCam;
+    public CinemachineVirtualCamera poliCam;
 
     private void Awake()
     {
-        SetActiveCamera(cityZoomCam);
+        SetActiveCamera(poliCam);
 
         Invoke(nameof(SwitchToMain), 1.5f);
     }
@@ -37,7 +37,7 @@ public class CameraSwitcher : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Z))
         {
-            SetActiveCamera(cityZoomCam); // Zoom a prefab
+            SetActiveCamera(poliCam); // Vista desde els polis
         }
     }
 
@@ -52,7 +52,7 @@ public class CameraSwitcher : MonoBehaviour
         if (mainCam != null) mainCam.Priority = 5;
         if (topDownCam != null) topDownCam.Priority = 5;
         if (cityCam != null) cityCam.Priority = 5;
-        if (cityZoomCam != null) cityZoomCam.Priority = 5;
+        if (poliCam != null) poliCam.Priority = 5;
 
         // Ara activa la càmera que vols
         if (activeCam != null) activeCam.Priority = 20;
