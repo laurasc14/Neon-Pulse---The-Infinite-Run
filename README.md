@@ -1,5 +1,6 @@
 <p align="center">
-  <img src="img/NeonPulseLogo.png" width="300" alt="Neon Pulse logo"/>
+  <img src="Neon Pulse - The Infinite Run/img/NeonPulseLogo.png" width="300" alt="Neon Pulse logo"/>
+
 </p>
 
 # Neon Pulse: The Infinite Run
