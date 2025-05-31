@@ -118,12 +118,12 @@ Projecte desenvolupat per **Laura Solé Català** com a part del Treball Final d
 Segueix l’evolució del projecte a les xarxes socials:
 
 - [X (Twitter)](https://x.com/NeonPulseRun)
+- [YouTube](https://www.youtube.com/channel/UC0RfVUIzd8O-eQJeyvgpCTQ)
 
 Pròximament també a:
 
 - Instagram  
 - TikTok  
-- YouTube  
 - Twitch
 
 ---
