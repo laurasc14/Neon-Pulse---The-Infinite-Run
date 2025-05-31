@@ -120,4 +120,4 @@ Pròximament també a:
 ## 📄 Documentació
 
 Pots consultar el document complet del Treball Final de Grau aquí:  
-[📘 TFG - Memòria del projecte (PDF)](./TFG_LauraSole_NeonPulse.pdf)
+[📘 TFG - Memòria del projecte (PDF)](./Neon%20Pulse%20-%20The%20Infinite%20Run/docs/TFG_LauraSole_NeonPulse.pdf)
