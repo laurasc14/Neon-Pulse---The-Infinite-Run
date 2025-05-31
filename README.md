@@ -1,26 +1,26 @@
 # Neon Pulse: The Infinite Run
 
-**Neon Pulse: The Infinite Run** és un videojoc de tipus *Endless Runner* ambientat en un món futurista amb estètica ciberpunk. El jugador assumeix el rol d’un corredor que ha de sobreviure en una ciutat plena de llums de neó, evitant obstacles, recollint criptocoins i utilitzant habilitats especials com el *dash* i el *teletransport*.
+**Neon Pulse: The Infinite Run** és un videojoc de tipus *Endless Runner* ambientat en un món futurista amb estètica ciberpunk. El jugador assumeix el rol d’un corredor que ha de sobreviure en una ciutat plena de llums de neó, evitant obstacles, recollint criptocoins i avançant el màxim possible sense ser eliminat.
 
 ---
 
 ## 🎮 Característiques del joc
 
-- **Estètica ciberpunk**: Ciutat futurista amb una atmosfera visual captivadora, plena de llums de neó, drons i trampes tecnològiques.
-- **Mecàniques avançades**: Inclou moviments bàsics, *dash* i *teletransport* per a una experiència de joc dinàmica i estratègica.
-- **Obstacles generats de forma procedural**: Cada partida és única gràcies a la generació aleatòria d'obstacles.
-- **Sistema de progressió**: Recull criptocoins per desbloquejar noves habilitats i millores.
-- **Multiplataforma**: Compatible amb dispositius mòbils (Android/iOS) i ordinadors (PC).
+- **Estètica ciberpunk**: Ciutat futurista amb una atmosfera visual vibrant i estilitzada amb llums de neó.
+- **Jugabilitat fluida**: Moviments bàsics per esquivar obstacles i mantenir-se en cursa.
+- **Obstacles generats de forma procedural**: Cada partida és diferent gràcies a la generació aleatòria.
+- **Sistema de puntuació**: Recull criptocoins i intenta superar la teva millor marca.
+- **Multiplataforma**: Disponible per a dispositius Android i ordinadors Windows.
 
 ---
 
 ## 🎯 Objectius del projecte
 
-Aquest videojoc forma part d’un **Treball Final de Grau (TFG)** i té com a objectiu explorar:
+Aquest videojoc ha estat desenvolupat com a part d’un **Treball Final de Grau (TFG)** amb l’objectiu d’explorar:
 
-- La generació procedural en entorns de joc.
-- El disseny d’experiències immersives en videojocs.
-- L’aplicació de mecàniques avançades en gèneres *Endless Runner*.
+- L’ús de tècniques de generació procedural.
+- El disseny d’un joc accessible i addictiu dins del gènere *Endless Runner*.
+- La creació d’una atmosfera atractiva utilitzant elements visuals ciberpunk.
 
 ---
 
@@ -49,9 +49,13 @@ Descarrega la versió corresponent des de la secció de [Releases](https://githu
 ## 📁 Estructura del repositori
 
 /Assets → Recursos del joc (gràfics, sons, scripts)
+
 /Builds → Fitxers compilats (.apk i .exe)
+
 /Scenes → Escenes de Unity
+
 /Scripts → Lògica i comportament del joc
+
 /Prefabs → Elements reutilitzables del joc
 
 ---
