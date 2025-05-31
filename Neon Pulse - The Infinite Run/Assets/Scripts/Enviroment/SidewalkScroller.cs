@@ -8,6 +8,8 @@ public class SidewalkScroller : MonoBehaviour
 
     private DecorationGenerator decorationGen;
 
+    public bool reset = true;
+
     void Start()
     {
         decorationGen = FindObjectOfType<DecorationGenerator>();
@@ -19,7 +21,7 @@ public class SidewalkScroller : MonoBehaviour
 
         if (transform.position.z < resetZ)
         {
-            if (decorationGen != null)
+            if (decorationGen != null && reset)
             {
                 decorationGen.RemoveDecoration(gameObject);
             }

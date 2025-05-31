@@ -16,8 +16,8 @@ public class WorldGenerator : MonoBehaviour
     public float velocitatMaxima = 25f;
 
     private float lastZGenerated;
+    public float distance;
     private float speed;
-    private float distance;
 
     void Start()
     {
@@ -26,9 +26,12 @@ public class WorldGenerator : MonoBehaviour
 
         lastZGenerated = player.position.z;
 
-        // Generació inicial
-        enviromentGenerator.CreateRoad();          // Primera carretera
-        decorationGenerator.CreateDecoration();    // Primera vorera
+        // Inicialización
+        enviromentGenerator.CreateRoad();
+        decorationGenerator.CreateDecoration();
+
+        // Enlazar referencia para sincronizar distancia
+        decorationGenerator.worldGenerator = this;
 
         for (int i = 0; i < 5; i++)
         {
@@ -46,14 +49,13 @@ public class WorldGenerator : MonoBehaviour
         if (distance + generationDistance > lastZGenerated)
         {
             GenerateWorldStep();
-            Debug.Log("generating road");
         }
+        decorationGenerator.CreateDecoration();
     }
 
     void GenerateWorldStep()
     {
         enviromentGenerator.CreateRoad();
-        decorationGenerator.CreateDecoration();
 
         lastZGenerated += enviromentGenerator.roadLength;
     }

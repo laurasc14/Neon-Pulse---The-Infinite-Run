@@ -301,7 +301,7 @@ public class MovimientoCapusla : MonoBehaviour
 
     IEnumerator spawnPoli() {
 
-        while(policeCar.transform.localPosition.z < 5.75)
+        while(policeCar.transform.localPosition.z < -4)
         {
             policeCar.transform.localPosition += new Vector3(0, 0, 7)*Time.deltaTime;
             yield return new WaitForSeconds(Time.deltaTime);

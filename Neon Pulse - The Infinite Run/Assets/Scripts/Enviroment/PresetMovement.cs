@@ -10,13 +10,9 @@ public class PresetMovement : MonoBehaviour
     {
         transform.position -= Vector3.forward * GameSpeedController.ScrollSpeed * Time.deltaTime;
 
-        if (transform.position.z < -30f)
+        if (transform.position.z < -60f)
         {
-            var envGen = FindObjectOfType<EnviromentGenerator>();
-            if (envGen != null)
-            {
-                envGen.RemoveRoad(gameObject);
-            }
+            Destroy(this.gameObject);
         }
     }
 }

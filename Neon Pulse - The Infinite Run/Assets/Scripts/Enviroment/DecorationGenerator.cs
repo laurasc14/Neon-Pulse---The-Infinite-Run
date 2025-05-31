@@ -1,13 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography;
 using UnityEngine;
 
 public class DecorationGenerator : MonoBehaviour
 {
     [Header("Decoration Configuration")]
     public GameObject decorationParent;
-    private float currentZPosition = -30f;
 
     [Header("Sidewalk Configuration")]
     public List<GameObject> leftSidewalkPrefabs;
@@ -22,122 +20,148 @@ public class DecorationGenerator : MonoBehaviour
     public float rightSideElementOffsetX = 6f;
     public float sideElementOffsetY = 0.2f;
 
+    [Header("External Reference")]
+    public WorldGenerator worldGenerator;
+
     private Queue<GameObject> leftPool = new Queue<GameObject>();
     private Queue<GameObject> rightPool = new Queue<GameObject>();
-
     private List<GameObject> activeDecoration;
-    private GameObject lastDecorationGeneratedLeft;
-    private GameObject lastDecorationGeneratedRight;
+
+    private GameObject lastLeftSidewalk;
+    private GameObject lastRightSidewalk;
+    private Vector3 initialLeftPos;
+    private Vector3 initialRightPos;
 
     private GameObject lastLeftElement;
+    private Vector3 initialLeftElementPos;
     private GameObject lastRightElement;
+    private Vector3 initialRightElementPos;
 
     public int poolSize = 30;
-    public float roadLength = 27.5f;
-
-    private int contadorEdificios = 30;
 
     void Awake()
     {
         activeDecoration = new List<GameObject>();
         PreloadPools();
 
-        GameObject left = GetFromPool(leftPool, leftSidewalkPrefabs);
-        left.transform.position = new Vector3(-leftSidewalkOffsetX, 0, -30);
-        left.SetActive(true);
-        lastDecorationGeneratedLeft = left;
+        // Sidewalks
+        for (int i = 0; i < 10; i++)
+            lastLeftSidewalk = GenerateLeftSidewalk();
+        initialLeftPos = lastLeftSidewalk.transform.position;
 
-        GameObject right = GetFromPool(rightPool, rightSidewalkPrefabs);
-        right.transform.position = new Vector3(rightSidewalkOffsetX, 0, -30);
-        right.SetActive(true);
-        lastDecorationGeneratedRight = right;
+        for (int i = 0; i < 20; i++)
+            lastRightSidewalk = GenerateRightSidewalk();
+        initialRightPos = lastRightSidewalk.transform.position;
 
-        GameObject leftElement = Instantiate(GetRandomPrefab(leftSideElements), new Vector3(-leftSideElementOffsetX, sideElementOffsetY, -30), Quaternion.identity, decorationParent.transform);
-        lastLeftElement = leftElement;
-        activeDecoration.Add(leftElement);
+        // Side Elements - inicial en -30, luego +200. Nuevo se convierte en el último.
+        GenerateSideElementAt(true, -30f);
 
-        GameObject rightElement = Instantiate(GetRandomPrefab(rightSideElements), new Vector3(rightSideElementOffsetX, sideElementOffsetY, -30), Quaternion.identity, decorationParent.transform);
-        lastRightElement = rightElement;
-        activeDecoration.Add(rightElement);
+        GenerateSideElementAt(true, lastLeftElement.transform.position.z + 200f);
 
-        for (int i = 0; i < 30; ++i)
-        {
-            //GenerateRoadSection();
-        }
+        GenerateSideElementAt(false, -30f);
+        GenerateSideElementAt(false, lastRightElement.transform.position.z + 200f);
+
     }
-
-   /** void Update()
-    {
-        GameObject player = GameObject.FindWithTag("Player");
-        if (player == null) return;
-
-        if (player.transform.position.z + 30f > currentZPosition)
-        {
-            CreateDecoration();
-        }
-    }*/
 
     public void CreateDecoration()
     {
-        GenerateRoadSection();
+        // Sidewalks
+        if (lastLeftSidewalk.transform.position.z < initialLeftPos.z)
+            lastLeftSidewalk = GenerateLeftSidewalk();
+
+        if (lastRightSidewalk.transform.position.z < initialRightPos.z)
+            lastRightSidewalk = GenerateRightSidewalk();
+
+        // Side Elements: Si el último ha recorrido 170 en Z negativa, generar otro a -200 más
+        if (initialLeftElementPos.z - lastLeftElement.transform.position.z >= 190f)
+        {
+            GenerateSideElementAt(true, lastLeftElement.transform.localPosition.z + 200f);
+        }
+
+        if (initialRightElementPos.z - lastRightElement.transform.position.z >= 190f)
+        {
+            GenerateSideElementAt(false, lastRightElement.transform.position.z + 200f);
+        }
+
+        CleanupSideElements();
     }
 
-    private void GenerateRoadSection()
-    {
-        GenerateSidewalks();
-        GenerateSidewalks();
-        GenerateSideElements();
-    }
-
-    private void GenerateSidewalks()
+    private GameObject GenerateLeftSidewalk()
     {
         GameObject left = GetFromPool(leftPool, leftSidewalkPrefabs);
-        if (left == null || lastDecorationGeneratedLeft == null) return;
+        if (left == null) return null;
 
-        left.transform.position = new Vector3(-leftSidewalkOffsetX, 0, lastDecorationGeneratedLeft.transform.position.z + 5);
-        left.transform.rotation = Quaternion.identity * Quaternion.AngleAxis(90, Vector3.up);
+        float z = lastLeftSidewalk != null ? lastLeftSidewalk.transform.position.z + 19.5f : -30f;
+        left.transform.position = new Vector3(-leftSidewalkOffsetX, 0, z);
+        left.transform.rotation = Quaternion.Euler(0, 90, 0);
         left.SetActive(true);
-        lastDecorationGeneratedLeft = left;
         activeDecoration.Add(left);
-
-        GameObject right = GetFromPool(rightPool, rightSidewalkPrefabs);
-        if (right == null || lastDecorationGeneratedRight == null) return;
-
-        right.transform.position = new Vector3(rightSidewalkOffsetX, 0, lastDecorationGeneratedRight.transform.position.z + 5);
-        right.transform.rotation = Quaternion.Euler(0, 180, 0);
-        right.SetActive(true);
-        lastDecorationGeneratedRight = right;
-        activeDecoration.Add(right);
+        return left;
     }
 
-    private void GenerateSideElements()
+    private GameObject GenerateRightSidewalk()
     {
-        if(contadorEdificios >= 30)
-        {
-            if (leftSideElements.Count > 0)
-            {
-                GameObject left = Instantiate(GetRandomPrefab(leftSideElements),
-                    new Vector3(-leftSideElementOffsetX, sideElementOffsetY, lastLeftElement.transform.position.z + 200f),
-                    Quaternion.identity,
-                    decorationParent.transform);
-                lastLeftElement = left;
-                activeDecoration.Add(left);
-            }
+        GameObject right = GetFromPool(rightPool, rightSidewalkPrefabs);
+        if (right == null) return null;
 
-            if (rightSideElements.Count > 0)
-            {
-                GameObject right = Instantiate(GetRandomPrefab(rightSideElements),
-                    new Vector3(rightSideElementOffsetX, sideElementOffsetY, lastRightElement.transform.position.z + 200f),
-                    Quaternion.identity,
-                    decorationParent.transform);
-                lastRightElement = right;
-                activeDecoration.Add(right);
-            }
-            contadorEdificios -= 30;
+        float z = lastRightSidewalk != null ? lastRightSidewalk.transform.position.z + 7.2f : -30f;
+        right.transform.position = new Vector3(rightSidewalkOffsetX, 0, z);
+        right.transform.rotation = Quaternion.Euler(0, 180, 0);
+        right.SetActive(true);
+        activeDecoration.Add(right);
+        return right;
+    }
+
+    private GameObject GenerateSideElementAt(bool isLeft, float z)
+    {
+        List<GameObject> list = isLeft ? leftSideElements : rightSideElements;
+        float offsetX = isLeft ? -leftSideElementOffsetX : rightSideElementOffsetX;
+
+        if (list.Count == 0) return null;
+
+        GameObject obj = Instantiate(
+            GetRandomPrefab(list),
+            new Vector3(offsetX, sideElementOffsetY, z),
+            Quaternion.identity,
+            decorationParent.transform
+        );
+
+        // Como el entorno se mueve hacia Z negativa, ajustamos:
+        if (isLeft)
+        {
+            lastLeftElement = obj;
+            initialLeftElementPos = obj.transform.position;
         }
         else
         {
-            contadorEdificios++;
+            if (obj.transform.localPosition.z < 125 && lastRightElement != null)
+            {
+
+                Destroy(obj);
+                return null;
+            }
+            lastRightElement = obj;
+            initialRightElementPos = obj.transform.position;
+        }
+
+        activeDecoration.Add(obj);
+        return obj;
+    }
+
+
+    private void CleanupSideElements()
+    {
+        for (int i = activeDecoration.Count - 1; i >= 0; i--)
+        {
+            GameObject deco = activeDecoration[i];
+            if (deco == null) continue;
+
+            float z = deco.transform.position.z;
+            if (z <= -300f)
+            {
+                activeDecoration.RemoveAt(i);
+                Destroy(deco);
+            }
         }
     }
 
@@ -147,8 +171,7 @@ public class DecorationGenerator : MonoBehaviour
             return pool.Dequeue();
 
         GameObject prefab = GetRandomPrefab(prefabs);
-        if (prefab == null /**|| decorationParent == null*/)
-            return null;
+        if (prefab == null) return null;
 
         GameObject obj = Instantiate(prefab, Vector3.zero, Quaternion.identity, decorationParent.transform);
         obj.SetActive(false);
@@ -170,11 +193,11 @@ public class DecorationGenerator : MonoBehaviour
     {
         for (int i = 0; i < poolSize; i++)
         {
-            GameObject left = Instantiate(GetRandomPrefab(leftSidewalkPrefabs), Vector3.zero, Quaternion.identity * Quaternion.AngleAxis(90, Vector3.up), decorationParent.transform);
+            GameObject left = Instantiate(GetRandomPrefab(leftSidewalkPrefabs), Vector3.zero, Quaternion.Euler(0, 90, 0), decorationParent.transform);
             left.SetActive(false);
             leftPool.Enqueue(left);
 
-            GameObject right = Instantiate(GetRandomPrefab(rightSidewalkPrefabs), Vector3.zero, Quaternion.identity, decorationParent.transform);
+            GameObject right = Instantiate(GetRandomPrefab(rightSidewalkPrefabs), Vector3.zero, Quaternion.Euler(0, 180, 0), decorationParent.transform);
             right.SetActive(false);
             rightPool.Enqueue(right);
         }
