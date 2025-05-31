@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Neon Pulse - The Infinite Run/img/NeonPulseLogo.png" width="300" alt="Neon Pulse logo"/>
+  <img src="Neon Pulse - The Infinite Run/img/NeonPulselogo.png" width="300" alt="Neon Pulse logo"/>
 
 </p>
 
