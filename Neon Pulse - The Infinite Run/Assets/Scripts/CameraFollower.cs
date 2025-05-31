@@ -7,21 +7,16 @@ public class CameraFollower : MonoBehaviour
 
     void Start()
     {
-        Invoke(nameof(AssignPlayer), 0.2f); 
+        Invoke(nameof(AssignTarget), 0.2f); // espera que el jugador aparegui
     }
 
-    void AssignPlayer()
+    void AssignTarget()
     {
         GameObject player = GameObject.FindWithTag("Player");
         if (player != null && virtualCam != null)
         {
             virtualCam.Follow = player.transform;
             virtualCam.LookAt = player.transform;
-            Debug.Log("Càmera assignada al jugador instanciat.");
-        }
-        else
-        {
-            Debug.LogWarning("Player no trobat o càmera no assignada!");
         }
     }
 }
