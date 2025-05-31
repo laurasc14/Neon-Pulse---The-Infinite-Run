@@ -29,6 +29,37 @@ Aquest videojoc ha estat desenvolupat com a part d’un **Treball Final de Grau 
 
 ---
 
+## 🎮 Controls
+
+### PC (teclat)
+- `←` o `A`: Moure a l'esquerra  
+- `→` o `D`: Moure a la dreta  
+- `Espai`: Saltar  
+- `P`: Pausar el joc  
+- `R`: Reiniciar la partida  
+- `Esc`: Sortir del joc  
+
+### Android (tacte)
+- Deslizar a l'esquerra o dreta: Canviar de carril  
+- Tocar la pantalla: Saltar  
+
+---
+
+## 🗺️ Roadmap
+
+- [x] Mecànica bàsica de moviment  
+- [x] Salt i canvi de carril  
+- [x] Generació procedural d'obstacles  
+- [x] Sistema de puntuació  
+- [x] Sistemes de pausa (`P`) i reinici (`R`)  
+- [x] Versió per a PC (Windows)  
+- [x] Versió per a Android (.apk)  
+- [ ] Compatibilitat amb iOS  
+- [ ] Publicació a Steam / Google Play  
+- [ ] Integració amb xarxes socials (Instagram, TikTok, etc.)
+
+---
+
 ## 🛠 Instal·lació i execució
 
 ### 🔧 Per a desenvolupadors
