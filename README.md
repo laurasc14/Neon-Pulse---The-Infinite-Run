@@ -65,9 +65,9 @@ Aquest videojoc ha estat desenvolupat com a part d’un **Treball Final de Grau 
 
 📺 Mira el tràiler oficial de **Neon Pulse: The Infinite Run**:
 
-[![Mira el tràiler](https://img.youtube.com/vi/VIDEO_ID/hqdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+[![Mira el tràiler](https://img.youtube.com/vi/VIDEO_ID/hqdefault.jpg)](https://youtu.be/gCMRdhyhoQw)
 
-> *Disponible pròximament a YouTube*
+> Disponible a YouTube
 
 ---
 
