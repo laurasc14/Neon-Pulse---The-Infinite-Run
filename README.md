@@ -83,10 +83,10 @@ Aquest videojoc ha estat desenvolupat com a part d’un **Treball Final de Grau 
 
 Descarrega la versió corresponent des de la secció de [Releases](https://github.com/laurasc14/Neon-Pulse---The-Infinite-Run/releases):
 
-- 🪟 [Descarrega per a Windows (.zip)](https://github.com/laurasc14/Neon-Pulse---The-Infinite-Run/releases/download/v1.0/NeonPulse_Windows.zip)  
+- 🪟 [Descarrega per a Windows (.zip)](https://github.com/laurasc14/Neon-Pulse---The-Infinite-Run/releases/download/v2.0/NeonPulse_Windows.zip) 
   Conté el `.exe`, el `.dll` i la carpeta `_Data` necessària per executar el joc.
 
-- 🤖 [Descarrega per a Android (.apk)](https://github.com/laurasc14/Neon-Pulse---The-Infinite-Run/releases/download/v1.0/NeonPulse.apk)  
+- 🤖 [Descarrega per a Android (.apk)](https://github.com/laurasc14/Neon-Pulse---The-Infinite-Run/releases/download/v2.0/NeonPulse.apk)  
   Fitxer instal·lable per dispositius Android.
 
 > També estarà disponible pròximament a:
