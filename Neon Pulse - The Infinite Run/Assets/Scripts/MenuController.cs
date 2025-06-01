@@ -18,15 +18,15 @@ public class MenuController : MonoBehaviour
     }
 
     public void PlayGame() {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(3);
     }
 
     public void Controls() {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
     public void Options()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(2);
     }
 
     public void Exit() { 

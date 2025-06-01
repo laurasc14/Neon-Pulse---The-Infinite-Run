@@ -121,7 +121,7 @@ public class PowerUpUIManager : MonoBehaviour
                 }
 
             }
-            Debug.Log("hasta aqui");
+            //Debug.Log("hasta aqui");
 
             if (existe)
             {

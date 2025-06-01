@@ -4,15 +4,16 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Obstaculo
   - Coin
-  - PowerUp
+  - Obstaculo
   - JumpPlatform
+  - Undefined
+  - Suelo
+  - PowerUp
   - RoadParent
-  - roads
   - PoliceCar
   - vida
-  - Fallback_Deco
+  - roads
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - 
   - Water
   - UI
-  - Suelo
+  - suelo
   - Coin
   - 
   - 

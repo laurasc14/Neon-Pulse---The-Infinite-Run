@@ -1532,11 +1532,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 292376337}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -920.5, y: 0.9999999}
-  m_SizeDelta: {x: 7.4647, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 30, y: -0.00000011920929}
+  m_SizeDelta: {x: 7.4647217, y: 100}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &334199081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1917,7 +1917,7 @@ Transform:
   m_GameObject: {fileID: 385343952}
   serializedVersion: 2
   m_LocalRotation: {x: 0.24415919, y: 0.000000028900365, z: -0.000000007276512, w: 0.9697352}
-  m_LocalPosition: {x: 0, y: 6.7274437, z: -10.280922}
+  m_LocalPosition: {x: 0, y: 5.7615175, z: -10.022103}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2048,11 +2048,11 @@ RectTransform:
   - {fileID: 506197082}
   m_Father: {fileID: 292376337}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 835, y: 443}
-  m_SizeDelta: {x: 192.1, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -30, y: -30}
+  m_SizeDelta: {x: 192.09998, y: 100}
+  m_Pivot: {x: 1, y: 1}
 --- !u!114 &455915675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3575,7 +3575,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4894872305640102, guid: 8b2f7c67154f424439e862a1239f81ea, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4894872305640102, guid: 8b2f7c67154f424439e862a1239f81ea, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4822,7 +4822,7 @@ GameObject:
   - component: {fileID: 1093656083}
   m_Layer: 5
   m_Name: vida
-  m_TagString: Untagged
+  m_TagString: vida
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4845,11 +4845,11 @@ RectTransform:
   - {fileID: 1409512993}
   m_Father: {fileID: 292376337}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 542, y: 443}
-  m_SizeDelta: {x: 192.1, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -300, y: -30}
+  m_SizeDelta: {x: 192.09998, y: 100}
+  m_Pivot: {x: 1, y: 1}
 --- !u!114 &1093656083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5906,8 +5906,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1370265563}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.60668737, y: 0.000000011584563, z: -0.000000008841178, w: 0.7949406}
-  m_LocalPosition: {x: -0.00000023071249, y: 30.136824, z: -7.9158263}
+  m_LocalRotation: {x: 0.60674685, y: 0.000000098903, z: -0.00000007549309, w: 0.7948951}
+  m_LocalPosition: {x: -0.000001968739, y: 29.172083, z: -7.6526766}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6376,11 +6376,11 @@ RectTransform:
   - {fileID: 1166041002}
   m_Father: {fileID: 292376337}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -897.1, y: 443}
-  m_SizeDelta: {x: 25.2211, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 30, y: -30}
+  m_SizeDelta: {x: 25.22107, y: 100}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &1419415449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7689,7 +7689,7 @@ GameObject:
   - component: {fileID: 1575241139}
   m_Layer: 0
   m_Name: pos_pies
-  m_TagString: Untagged
+  m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8383,7 +8383,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 120
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &1620009978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8397,13 +8397,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveAction: {fileID: 708409580849572733, guid: db757eebc92012940a9c32cd37eef09b, type: 3}
+  jumpAction: {fileID: -8385248313760614220, guid: db757eebc92012940a9c32cd37eef09b, type: 3}
   velocity: 5
-  maxVelocity: 10
+  maxVelocity: 50
   jumpForce: 26
   pies: {fileID: 1575241138}
   suelo:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 65
   magnetRange: 5
   magnetSpeed: 20
   policeCar: {fileID: 1235231945}

@@ -8,11 +8,12 @@ using UnityEngine.SceneManagement;
 public class MovimientoCapusla : MonoBehaviour
 {
     public InputActionReference moveAction;
+    public InputActionReference jumpAction;
     private Rigidbody rb;
 
     public float velocity = 5;
     private float baseVelocity = 5;
-    public float maxVelocity = 10;
+    public float maxVelocity = 50;
     public float jumpForce = 30;
 
     public GameObject pies;
@@ -63,11 +64,14 @@ public class MovimientoCapusla : MonoBehaviour
     {
         Vector3 moveDirection = moveAction.action.ReadValue<Vector2>();
         moveDirection.y = 0;
+        moveDirection.Normalize();
+
         rb.velocity = moveDirection * velocity + new Vector3(0, rb.velocity.y);
 
-        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded() && !estaSobreJumpPlatform)
+        if (jumpAction.action.WasPressedThisFrame() && IsGrounded() && !estaSobreJumpPlatform)
         {
             rb.AddForce(Vector3.up * jumpForce * (jumpPowerActive ? 1.25f : 1f), ForceMode.Impulse);
+            Debug.Log("salta");
         }
 
         puntuacion += 10 * Time.deltaTime;
@@ -100,6 +104,12 @@ public class MovimientoCapusla : MonoBehaviour
         if (policeCar != null && Vector3.Distance(transform.position, policeCar.transform.position) > safeDistanceFromPolice)
         {
             isVulnerable = false;
+        }
+
+        if (transform.position.y < -5)
+        {
+            transform.position = new Vector3(transform.position.x, 2, transform.position.z);
+            rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
         }
     }
 
@@ -179,7 +189,7 @@ public class MovimientoCapusla : MonoBehaviour
             }
         }
 
-        
+
     }
 
     IEnumerator HandleObstacleCollision()
@@ -287,7 +297,7 @@ public class MovimientoCapusla : MonoBehaviour
     }
 
     void UpdateVidesUI()
-{
+    {
         Debug.Log("Vides restants: " + videsRestants);
 
         videsRestants = Mathf.Clamp(videsRestants, 0, 2);
@@ -299,11 +309,12 @@ public class MovimientoCapusla : MonoBehaviour
 
     }
 
-    IEnumerator spawnPoli() {
+    IEnumerator spawnPoli()
+    {
 
-        while(policeCar.transform.localPosition.z < -4)
+        while (policeCar.transform.localPosition.z < -4)
         {
-            policeCar.transform.localPosition += new Vector3(0, 0, 7)*Time.deltaTime;
+            policeCar.transform.localPosition += new Vector3(0, 0, 7) * Time.deltaTime;
             yield return new WaitForSeconds(Time.deltaTime);
         }
     }
