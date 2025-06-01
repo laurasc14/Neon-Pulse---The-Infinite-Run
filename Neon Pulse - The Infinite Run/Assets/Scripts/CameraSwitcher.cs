@@ -10,19 +10,20 @@ public class CameraSwitcher : MonoBehaviour
     public CinemachineVirtualCamera topDownCam;
     public CinemachineVirtualCamera cityCam;
     public CinemachineVirtualCamera poliCam;
+    public CinemachineVirtualCamera cityCamCrrils;
 
     private void Awake()
     {
         SetActiveCamera(poliCam);
 
-        Invoke(nameof(SwitchToMain), 1.5f);
+        Invoke(nameof(SwitchToMain), 2f);
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.M))
         {
-            SetActiveCamera(mainCam); // Vista normal
+            SwitchToMain(); // Vista normal
         }
 
         if (Input.GetKeyDown(KeyCode.T))
@@ -39,6 +40,11 @@ public class CameraSwitcher : MonoBehaviour
         {
             SetActiveCamera(poliCam); // Vista desde els polis
         }
+
+         if(Input.GetKeyDown(KeyCode.G))
+        {
+            SetActiveCamera(cityCamCrrils); // Vista desde la ciuatat als carrils
+        }
     }
 
     void SwitchToMain()
@@ -53,6 +59,7 @@ public class CameraSwitcher : MonoBehaviour
         if (topDownCam != null) topDownCam.Priority = 5;
         if (cityCam != null) cityCam.Priority = 5;
         if (poliCam != null) poliCam.Priority = 5;
+        if (cityCamCrrils != null) cityCamCrrils.Priority = 5;
 
         // Ara activa la càmera que vols
         if (activeCam != null) activeCam.Priority = 20;
